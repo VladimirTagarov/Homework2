@@ -36,8 +36,9 @@ let user = {
         isAdmin: false
     };
 user.cityOfResidence = 'Moscow';
-user.age = 33;
+user.age = 37;
 delete user.cityOfResidence;
+
 let info = prompt('Какую информацию хотите узнать о пользователе?', 'name');
 alert(user[info]);
 

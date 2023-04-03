@@ -72,7 +72,7 @@ switch (monthNumber) {
         break;
 
     default:
-        alert('Такого номера месяца не существует')
+        alert('Такого номера месяца вовсе не существует')
         break;
 }
 

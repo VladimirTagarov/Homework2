@@ -10,11 +10,13 @@ const arr2 = [1, 5, 4, 10, 0, 3];
 const arr3 = [1, 3, 5, 10, 20];
     console.log(arr3.join(' '));
 
-const multiArr = [
-    [1, 1, 1],
-    [1, 1, 1],
-    [1, 1, 1]
-];
+let multiArr = [];
+    for (let index = 0; index < 3; index++) {
+        multiArr.push([]);
+        for (let el = 0; el < 3; el++) {
+            multiArr[index][el] = 1;
+        }
+    }
     console.log(multiArr);
 
 const arr5 = [1, 1, 1];

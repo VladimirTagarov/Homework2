@@ -3,16 +3,21 @@
 // string = string.toUpperCase();
 // console.log(string);
 
-// // 2
-//     const searchStart = (['Кошка', 'Кит', 'Комар', 'Носорог']); 
-//     let search = 'ко';
-//     function searchWords() {
-//     searchStart.forEach(element => {
-//         if (element.toLowerCase().includes(search.toLowerCase())) {
-//         console.log(element);}
-//     });
-//     }
-// searchWords();
+// // 2 
+
+let arr = ['Кошка', 'Кит', 'Комар', 'Носорог']; 
+let str = 'ко';
+    function searchWords(arr, str) {
+       arr.forEach(element => {
+        if (element.toLowerCase().includes(str.toLowerCase())) {
+        console.log(element);
+        return element;
+        
+    }
+    });
+    };
+    searchWords(arr, str);
+
 
 // // 3
 // console.log(Math.floor(32.58884));
@@ -23,31 +28,36 @@
 // console.log(Math.min(52, 53, 49, 77, 21, 32));
 // console.log(Math.max(52, 53, 49, 77, 21, 32));
 
-// // 5
-// function getRandomNum() {
-//     console.log(Math.random() * 10);
-// }
-// getRandomNum()
+// 5
+function getRandomNum() {
+    console.log(Math.ceil(Math.random() * 10));
+}
+getRandomNum();
 
-// // 6
-// function getRandomArrNumbers() {
-//     let a = Number(prompt('Введите целое число'));
-//     let arr = [];
-//     for (let index = 0; index < (Math.floor(a / 2)); index++) {
-//         arr.push(Math.round(Math.random() * a));
-//     }
-//     console.log(arr);
-// }
-// getRandomArrNumbers();
+// 6
+let a = Number(prompt('Введите целое число'));
+function getRandomArrNumbers(a) {
+    // let a = Number(prompt('Введите целое число'));
+    let arr = [];
+    for (let index = 0; index < (Math.floor(a / 2)); index++) {
+        arr.push(Math.round(Math.random() * a));
+    }
+    return arr;
+}
+getRandomArrNumbers(a);
 
-// // 7
-// function getRandomNumbers() {
-//     let b = Number(prompt('Введите целое число'));
-//     let c = Number(prompt('Введите целое число'));
-//     let numberRandom = Math.round((Math.random() * (c)) + b);
-//     console.log(numberRandom);
-// }
-// getRandomNumbers();
+
+// 7
+let b = Number(prompt('Введите целое число'));
+let c = Number(prompt('Введите целое число'));
+function getRandomNumbers(b, c) {
+    // let b = Number(prompt('Введите целое число'));
+    // let c = Number(prompt('Введите целое число'));
+    let numberRandom = Math.round((Math.random() * (c)) + b);
+    return numberRandom;
+}
+getRandomNumbers(b, c);
+
 
 // // 8
 // let currentDate = new Date();

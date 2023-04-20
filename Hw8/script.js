@@ -35,8 +35,8 @@
 //     console.log(users);
 
 // 3
-function each(array, callback) {
-    callback(array);
+// function each(array, callback) {
+//     callback(array);
 // };
 
 // let arr = [1, '4', 9, 'two'];
@@ -70,16 +70,18 @@ function calling() {
     console.log('Звоню!')
 };
 
-function beeps() {
+function beeps(callback) {
     setTimeout(() => {
-        console.log('Разговор')
+        console.log('Идут гудки...')
+        talk()
     }, 1000);
+
 }
 
 function talk() {
-    console.log('Идут гудки...')
+    console.log('Разговор')
 }
 
 calling();
-beeps();
-talk();
+beeps(talk);
+

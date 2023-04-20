@@ -4,6 +4,9 @@
 // a = 20;
 // alert(a);
 
+let yearOfIssueIphone = 2007;
+alert(yearOfIssueIphone);
+
 let languageCreator = 'Брендан Эйх';
 alert(languageCreator);
 
@@ -13,6 +16,9 @@ alert(num_1 + num_2);
 alert(num_1 - num_2);
 alert(num_1 * num_2);
 alert(num_1 / num_2);
+
+let result = (2 ** 5);
+alert(result);
 
 let a = 9;
 let b = 2;
@@ -35,9 +41,10 @@ let user = {
         age: 32,
         isAdmin: false
     };
-user.cityOfResidence = 'Moscow';
-user.age = 33;
-delete user.cityOfResidence;
+user['city of residence'] = 'Moscow';
+user.age = 37;
+delete user['city of residence'];
+
 let info = prompt('Какую информацию хотите узнать о пользователе?', 'name');
 alert(user[info]);
 
